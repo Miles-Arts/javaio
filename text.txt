@@ -1,7 +1,6 @@
-primera línea de texto
-segunda línea de texto
-tercera línea de nuestro texto
+Primera línea de texto
+Segunda línea de texto
+Tercera línea de nuestro texto
 Leer Java
-
 Estudiar con Java
 Aprendo Java
