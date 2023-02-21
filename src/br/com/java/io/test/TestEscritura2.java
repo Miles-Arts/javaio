@@ -1,53 +1,40 @@
 package br.com.java.io.test;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.Reader;
 import java.io.Writer;
 
-public class TestEscritura {
-	
+public class TestEscritura2 {
+
 	public static void main(String[] args) throws IOException {
-		
-		// genero el archivo
+
+	/*
 		OutputStream fileOutputStream = new FileOutputStream("texto-generado.txt");
-		// Proceso el archivo
-		Writer outputStreamWriter = new OutputStreamWriter(fileOutputStream);
-		// Escribir el archivo
-		BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
 		
+		Writer outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+		
+		BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
+
 		bufferedWriter.write("Primera linea de mi archivo generado");
 		bufferedWriter.newLine();
 		bufferedWriter.write("Segunda linea de mi archivo generado");
-		
+
 		bufferedWriter.close();
 		
 		
+		*/
+		
+		FileWriter fileWriter = new FileWriter("Texto-file-writer.txt");
+		
+		fileWriter.write("Primera línea vía file Writer");
+		fileWriter.write("\r\n");
+		fileWriter.write("Segunda línea vía file Writer");
+		fileWriter.close();
+
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

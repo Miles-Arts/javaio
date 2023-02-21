@@ -1,1 +1,2 @@
-Primera línea de textoSegunda línea de textoTercera línea de nuestro textoLeer JavaEstudiar con JavaAprendo Java
+Primera linea de mi archivo generado
+Segunda linea de mi archivo generado
