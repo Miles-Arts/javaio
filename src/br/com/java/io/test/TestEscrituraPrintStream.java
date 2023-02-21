@@ -26,6 +26,7 @@ public class TestEscrituraPrintStream {
 		bufferedWriter.close();
 		
 		
+		
 		PrintStream printStream = new PrintStream("texto-print-stream.txt");
 		printStream.println("Primera línea generada via print Stream");
 
