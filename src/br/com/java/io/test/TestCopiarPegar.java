@@ -18,9 +18,9 @@ public class TestCopiarPegar {
 	public static void main(String[] args) throws IOException {
 
 		
-		//InputStream inputStream = System.in;
-		InputStream fileInputStream = new FileInputStream("texto.txt");
-		Reader inputStreamReader = new InputStreamReader(fileInputStream);
+		InputStream inputStream = System.in;
+		//InputStream fileInputStream = new FileInputStream("texto.txt");
+		Reader inputStreamReader = new InputStreamReader(inputStream);
 		
 		BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 		
