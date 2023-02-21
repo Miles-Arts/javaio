@@ -13,10 +13,19 @@ public class TestLectura2 {
 		
 		Scanner scanner = new Scanner(new File("archivo.csv"));
 		
-		String linea = scanner.nextLine();
+		//String linea = scanner.nextLine();
 		
-		System.err.println(linea);
+		//System.err.println(linea);
 		
+		String linea; 
+		
+		/*while ((linea = scanner.nextLine()) != null  && scanner.hasNextLong()) {
+			System.out.println(linea);
+		}*/
+		
+		while ((linea = scanner.nextLine()) != null ) {
+			System.out.println(linea);
+		}
 		
 	}
 
