@@ -1,19 +1,18 @@
 package br.com.java.io.test;
 
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.io.PrintStream;
 import java.io.Writer;
 
-public class TestEscritura2 {
+public class TestEscrituraPrintStream {
 
 	public static void main(String[] args) throws IOException {
 
-	/*
+		
 		OutputStream fileOutputStream = new FileOutputStream("texto-generado.txt");
 		
 		Writer outputStreamWriter = new OutputStreamWriter(fileOutputStream);
@@ -27,14 +26,20 @@ public class TestEscritura2 {
 		bufferedWriter.close();
 		
 		
-		*/
-		
-		FileWriter fileWriter = new FileWriter("Texto-file-writer.txt");
-		
-		fileWriter.write("Primera línea vía file Writer");
-		fileWriter.write("\r\n");
-		fileWriter.write("Segunda línea vía file Writer");
-		fileWriter.close();
+		PrintStream printStream = new PrintStream("texto-print-stream.txt");
+		printStream.println("Primera línea generada via print Stream");
 
+		printStream.close();
+		
 	}
 }
+
+
+
+
+
+
+
+
+
+
