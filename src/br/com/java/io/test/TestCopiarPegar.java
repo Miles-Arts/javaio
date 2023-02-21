@@ -12,23 +12,31 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.Writer;
+import java.net.Socket;
 
 public class TestCopiarPegar {
 
 	public static void main(String[] args) throws IOException {
 
 		
-		InputStream inputStream = System.in;
+		Socket socket = new Socket();
+		
+		//InputStream inputStream = System.in;
 		//InputStream fileInputStream = new FileInputStream("texto.txt");
-		Reader inputStreamReader = new InputStreamReader(inputStream);
+		
+		
+		
+		Reader inputStreamReader = new InputStreamReader(socket.getInputStream());
 		
 		BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 		
 		
-
-		OutputStream fileOutputStream = new FileOutputStream("texto-copia.txt");
+		Socket socket2 = new Socket();
 		
-		Writer outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+		//OutputStream fileOutputStream = new FileOutputStream("texto-copia.txt");
+		
+		//Writer outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+		Writer outputStreamWriter = new OutputStreamWriter(socket.getOutputStream());
 		
 		BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
 		
