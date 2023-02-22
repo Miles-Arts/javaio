@@ -15,26 +15,26 @@ public class TestSerializacion {
 		
 		//String dato = "Diego";
 		
-		Cliente dato = new Cliente("Diego", 123456);
+		//Cliente dato = new Cliente("Diego", 123456);
 		
 		//Output ->  Quien envia | EMISOR
 	
 		//ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("objeto.bi"));
 		
-		ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("cliente.bin"));
+		/*ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("cliente.bin"));
 		
 		objectOutputStream.writeObject(dato);
 		
-		objectOutputStream.close();
+		objectOutputStream.close();*/
 		
 		//Input -> Quien Lee o Recibe | RECEPTOR
 		
-		/*ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("objeto.bi"));
+		ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("cliente.bin"));
 		
 		
-		String resultado =  (String ) objectInputStream.readObject();
+		Cliente resultado =  (Cliente) objectInputStream.readObject();
 		
-		System.out.println(resultado);*/
+		System.out.println(resultado.getDocumento());
 		
 		
 	}

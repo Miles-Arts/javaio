@@ -2,9 +2,13 @@ package br.com.java.io.test;
 
 import java.io.Serializable;
 
-//public class Cliente implements Serializable {
-	public class Cliente {
+public class Cliente implements Serializable {
+	//public class Cliente {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4215973937485096172L;
 	/**
 	 * 
 	 */
