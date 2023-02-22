@@ -33,6 +33,9 @@ public class TestLectura30 {
 			System.err.println(String.format("Julieta tiene %d años ", 29));
 			
 			
+			//  %s para String
+			// %d para  npumeros
+			
 			
 			
 			
