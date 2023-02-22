@@ -15,7 +15,7 @@ public class TestSerializacion {
 		
 		//String dato = "Diego";
 		
-		//Cliente dato = new Cliente("Diego", 123456);
+		Cliente dato = new Cliente("Diego", 123456L, 29);
 		
 		//Output ->  Quien envia | EMISOR
 	
