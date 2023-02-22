@@ -13,24 +13,28 @@ public class TestSerializacion {
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
 		
 		
-		String dato = "Diego";
+		//String dato = "Diego";
+		
+		Cliente dato = new Cliente("Diego", 123456);
+		
 		//Output ->  Quien envia | EMISOR
 	
-		/*ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("objeto.bi"));
+		//ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("objeto.bi"));
 		
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("cliente.bin"));
 		
 		objectOutputStream.writeObject(dato);
 		
-		objectOutputStream.close();*/
+		objectOutputStream.close();
 		
 		//Input -> Quien Lee o Recibe | RECEPTOR
 		
-		ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("objeto.bi"));
+		/*ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("objeto.bi"));
 		
 		
 		String resultado =  (String ) objectInputStream.readObject();
 		
-		System.out.println(resultado);
+		System.out.println(resultado);*/
 		
 		
 	}
